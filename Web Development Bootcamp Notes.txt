@@ -1,0 +1,201 @@
+##The 2020 web development Bootcamp
+
+1) How internet Work? 
+It is is just a long piece of wire and the wire connects different computers to each other.
+This computers are at diff location acroess the glob and they can talk to each other and transfer data through this giant wire.
+Now,some of these computers attached to the internet have a very special job.They have to be online 24/7
+ready to serve you all of the data and the files that you are requesting when
+you try to access websites and the computers that are doing that job,
+we would call a server and the computers that any user would you use to access the internet is called a client. 
+In the internet world, Client send the request(want Data/ Resource) to the server and Server give the response(data+Required Resource). 
+=======================================================================================================================================================
+
+2) How Websites Work?
+when we request any page its very diffcult to find that page in this massive internet nework.To solve this problem internet work in special way.
+Suppose you want sse the google homepage what happen in the background? 
+
+1. Client/ Browser send a meassage to the ISP(Internet Service provide like Aittel/JIO).
+2. The URL gets resolved
+3. A Request is sent to the server of the website
+4. The response of the server is parsed
+5. The page is rendered and displayed
+
+1. Client/ Browser send a meassage to the ISP(Internet Service provide like Aittel/JIO).
+your browser will send a message Int the form of URL (Uniform Service Locator)to your internet service provider. So these are the people who 
+you pay to be able to access the internet.Now the message that you're sending the ISP is I want to see google.com and the ISP will then relay 
+that message to something called a DNS server,a domain name system server.
+
+2. The URL gets resolved
+suppose we hit URL like https://www.google.com then 
+https => Protocol tha define the rules to transfer data over web.
+www => Subdomain  => A subdomain is commonly used to logically separate a website into sections.
+google => Domain name => The User have to purchase this for this website
+.com  => Top Level Domain ==> Domain which have inforamation of other domain
+Domain + TLD = Root doamin
+The URL can have Query parameter which start with "?" which is used to track the User ID.
+The job of these DNS servers is to translate domains to IP addresses. 
+You can imagine those servers as huge phonebook that store translation tables: Domain => IP address.
+And a DNS server is essentially just a souped up phonebook. And what happens when you make that request through your browser is the DNS server
+will look up in its database as to what is the exact IP address of that website that you are trying to access.
+And every single computer that's connected to the internet has an IP address. This is like a postal for your computer so that when people 
+need to send and receive files on the internet each computer can be located by their unique IP address.
+And once the DNS server finds the IP address,it sends that back to your browser. So now, you know the exact address where you can find the Google homepage.
+
+Step 3 - Request Is Sent
+The next thing that happens is you will send a direct request to that IP address through your internet service provider.
+The data is sent via the “HyperText Transfer Protocol” (known as “HTTP”) - a standardized protocol which defines what 
+a request (and response) has to look like, which data may be included (and in which form) and how the request will be submitted. 
+And this message will be delivered via what's called the internet backbone.(underwater cable to transfer data which is used in internet) 
+this will go to the server the computer that's located at that address is of course the Google server. 
+And on the server there's all of the files that I would need in order to be able to view the Google homepage.
+Server do the required procssing on data/ Resource to send the response.
+The server then sends all of those files back to me through the internet
+backbone and  we get Response back to the Browser.
+
+Step 4 - Response Is Parsed
+The data that you receive from the server usually consists of three types of files; HTML, CSS, and JavaScript.
+why are there so many different types of files?
+The HTML code file is responsible for the structure of your website.So you could use HTML to add an image or button or text box,
+whatever it is that you need in your website.
+Now,the second type of file are CSS files,and these files are responsible for styling your website.When you incorporate CSS,it allows you to 
+specify how you want your website to look. So you could say that, yes, I have a button that I got from my HTML,but that button I want it to
+be red and I want the text to be whiteand I want the font of the text to be an Arial. That is all done using CSS code.
+Now the final component is the JavaScript code.
+And this is the code that allows your website to actually do things or have
+behavior. It allows your website to actually do things and have behavior.
+
+Step 5 - Page Is Displayed
+As mentioned, the browser goes through the HTML, CSS and JS files along with Actual data returned by the server and builds a website based on that.
+=================================================================================================================================================
+3) What diff internet protocol
+Internet Protocol: used to share data over internet
+1) HTTP: HyperText Transfer Protocol
+Used to share data over web.
+2) FTP: File Yransfer Protocol
+Used to transfer large file.
+3) SMTP: Simple Mail Transfer protocol.
+Used to send Mail.
+4) RTP: Realtime Tranfer Protocol
+Used to send or receive Video/Audio.
+5) POP: Post Office Protocol
+To receive Mail.
+=================================================================================================================================================
+HTTP protocol:
+HTTP : HyperText(Text having link) Transfer Protocol: Define set of rule to send data back and forth bet client and server.
+HTTPS: stands for Hypertext Transfer Protocol Secure. HTTPS has a secure transfer. HTTPS is used to encrypt or decrypt user HTTP page.
+It is used to execute highly confidential online transaction like financial transactions.
+HTTP Terminology: 
+1) Browser - chrome, firefox IE
+2) TCP -Trasmission Control Protocol -define rule to send data over internet
+3) IP: Internet Protocol: every Computer (Server/Client) has an Unquie Address to identify it.
+4) URL: Unform Resource Locator: IP in humen redable form.
+6) DNS: Domai Name Server: Phonebook Domain => IP address.
+7) Resource: Files at Server.
+8) Client: Computer which request data
+9) Server: Computer which give response to the request.
+10) Proxy: Middleware bet server and client. used to hiiden IP 
+11) Request: Request method + Address pointing to the resource + other info about the client + Data and payload.
+12) Response: Status code + Info about how to handle response + Requested data.
+13) Header: Contains metadata of req and res.
+14) HTTP methods: Get, Post, Put, Patch, Delete, Header, Options, Trace.
+15) Status code:  Numerated code in the 100 to 500 range describing what type of response the server send back to the client.
+16) Cache: some data tha are store to speed up the response.
+17) Cookie: String of data passes back and forth bet client and server to create statefull session.
+18) Session: Client and server can share info in back and forth to know user inforamation.
+=================================================================================================================================================
+HTTP Features: 
+1) Stateless Protocol: Each request is considered as unique ie. every time user considered as new user.
+2) Human readable.
+3) HTTPS: Secure It is used to execute highly confidential online transaction like financial transactions.
+4) HTTP is a media independent protocol.
+5) HTTP is a request and response protocol.
+=================================================================================================================================================
+HTTP Methods: 8
+1) GET: to get the specified resourse if available.200 ok
+2) POST: to create an new resourse and add it to collection.sends data to the server. 201 created.
+3) PUT: contains(content + id): to update the existing singletone resource based on id. id resourse alredy exist==replace it. if No resource 
+        new resourse created. 
+4) PATCH: Modify and existing singletone resource based on ID.Partial modifications to a resource. 
+
+5) DELETE: Used to delete a singletone resource based on ID. it conatains ID + Header.
+6) HEAD: used to get response header from the resource.
+7) OPTION: Get the options available from this resource.
+8) TRACE: Create a loopback for the request massage.REquest received Acknowledge msg along with received data.
+9) CONNECT: The CONNECT method is used to establish a tunnel to the server, which is identified by a given URI.
+=================================================================================================================================================
+Diff bet PUT and PATCH?
+1) PUT: Update the whole resource. when we want to replace the orignam resource with new one ...use PUT.
+PATCH: when we want so update some part/partial update the exsting version of resource..use PATCH.
+2) you have to send the full payload as the PUT request whereas with PATCH, you only send the parameters which you want to update.
+Suppose we have a resource that holds the first name and last name of a person.
+3) PUT is idempotent: it update state of resource first time only and not for rest of the time.
+PATCH is not idempotent: Update resource every time.
+eg..
+If we want to change the first name then we send a PUT request for Update
+{ "first": "Michael", "last": "Angelo" }
+Here, although we are only changing the first name, with PUT request we have to send both parameters first and last. In other words, it is mandatory to send all values again, the full payload.
+When we send a PATCH request, however, we only send the data which we want to update. In other words, we only send the first name to update, no need to send the last name.
+For this reason, PATCH request requires less bandwidth.
+=================================================================================================================================================
+Diff bet GET and POST ?
+1) Get sends data using url in the browser.so notr secure on the othe hand POST does not sed data in URL so secure.
+2) Get: send the limited amount of data to the server. In post we can send bulk of data to server.
+=================================================================================================================================================
+HTTP Satus Code
+1XX: Information
+2XX: Success
+3XX: Redirection
+4XX: Client error
+5XX: Server error
+
+2XX: Success
+200: OK
+201: Created
+204: No content
+
+3XX: Redirection
+301: Move permanatly
+302/303: Found at this other URL
+307: Temporary redirect
+308: Permanatly Redirection
+
+4XX: Client error
+401: bad request
+403: UnAuthrized
+404: Not Found
+405: Method not allowd.
+
+5XX: Server error
+500: internal server error
+502: Bad gatway
+503: Service Unavialable.
+=================================================================================================================================================
+What HTTP header: used to send metadata oe extra data
+request: username and password info
+response: server send cookies.
+=================================================================================================================================================
+POST and PATCH are not Indenpotent method.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
