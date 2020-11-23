@@ -1,0 +1,86 @@
+inline CSS
+-- background color
+CSS display
+codepen
+div and span
+
+inline element : span img a tag inline take height as width as per content
+we can not change th width odsf oinline element 
+we can change inline to block and block to inline by writting a display property.
+if we want an elemt in the same line (inline ) but we want to change the width also ==> dispaly: inline-block 
+we want to hide something display:none visibility: hidden
+Favicon?
+pesticide extention for chrome
+
+#CSS inline block inline block--imp
+#CSS positioning 
+html predefined rules: 
+1) Content is Everything
+inline take height as width as per content
+block elemet take 100 % width but height is deremained by content
+2) Order comes from code. evey elemet is dispayed as per the order of the code
+3) Childerne on top of parent
+
+postioning : 
+1) Static : like above
+2) Relative : eg
+postion: relative -- it does not affectthe postion of other element
+left: 30px --top bootom left right
+Rule while postioning: The first thing is that when you move an element that has a relative position,
+it doesn't affect the position of anything else on screen.
+3) Absolute
+4) Fixed
+
+Diff bet RElative and absolute: 
+Just remember that relative positioning means that you're adding a margin relative to where the element
+should have been,but absolute position means that you're adding a margin to its parent element.
+
+
+Fixeed Positon: 
+Due to Fixed postioning element stays exactly where it is fixed in its position relative to the body of the web site,
+and it doesn't move despite all my scrolling.
+So this is really useful if you have a nav bar that you that you want to be fixed so that it follows
+the user as they scroll through your web site or sometimes you might have a side bar that you want to stay
+fixed,
+and this is how you would do it.
+eg. 
+position: fixed
+top: 0px
+
+======================================================================
+css Comment code shortcut: Ctrl+K+C/Ctrl+K+U
+css Comment code shortcut: Ctrl+K+C/Ctrl+K+U
+
+Dark Art of Centering Element with CSS: 
+Text-align center inside the container, or the parent element, will center everything inside that doesn't have a width set.
+Now if it is a block element and it has a width set, then you're going to have to center it using this auto value in the margin.
+So in this case we can also shorten this by saying that the top and bottom needs to be zero and the left and right needs to be auto.
+eg. 
+h1{	
+margin: 0 auto 0 auto
+}
+
+How we can take an element out of the HTML flow by changing one particular CSS property?
+That is of course the position property that we're going to change.
+And we're going to change it from its current value which is static to absolute and that is how we're
+going to remove it from the HTML flow.
+
+========================================================================
+Font Style: 
+What can I do to ensure that everybody has the same viewing experience with regards to the fonts on
+
+my web site?
+
+Well, you could use something called font embedding.
+So if we head over to fonts.google.com, then you can see that they've got a whole bunch of font
+families that you can choose from.
+And these are all fonts that are free for commercial use that you can simply embed into your website.
+===========================================================================================================
+CSS sizing: 
+16px=100%=1em
+when you are using em or when you're using percentages, that value is inherited. ie.if we give 1em to body and 2em to body then  for h1 it will become
+3em.
+rem: remove parent em and conside only latest
+
+
+
